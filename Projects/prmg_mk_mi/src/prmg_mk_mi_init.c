@@ -27,8 +27,8 @@ USART_InitTypeDef USART_InitStructure;
 
 //Для GPIO
 
-#define Open_LED_GPIO_CLK								RCC_AHB1Periph_GPIOB
-#define Open_LED_GPIO								  	GPIOB
+#define Open_LED_GPIO_CLK								  RCC_AHB1Periph_GPIOB
+#define Open_LED_GPIO								  	  GPIOB
 
 
 //Для USART3
@@ -60,7 +60,7 @@ USART_InitTypeDef USART_InitStructure;
 /*****************************************************************************/
 /*  PRIVATE FUNCTIONS                                                        */
 /*****************************************************************************/
-static void ClockConfig(void);
+//static void ClockConfig(void);
 static void PortsConfig(void);
 //static void SysTimerConfig(void);
 
@@ -119,6 +119,8 @@ Remarks:            Управление тактовыми частотами ведется через периферийный бл
                     регистрах (UART_CLOCK, CAN_CLOCK, USB_CLOCK, TIM_CLOCK) могут быть заданы их скорости работы.
 Return Value:       none
 ***************************************************************************************************/
+
+/*
 void ClockConfig()
 {
 
@@ -126,7 +128,7 @@ void ClockConfig()
 
 
 }
-
+*/
 
 /**************************************************************************************************
 Syntax:             void PortsConfig()

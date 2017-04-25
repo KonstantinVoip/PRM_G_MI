@@ -132,6 +132,11 @@ static __INLINE __ASM int32_t __REVSH(int32_t value)
 }
 
 
+
+
+
+
+
 #if       (__CORTEX_M >= 0x03)
 
 /** \brief  Reverse bit order of value

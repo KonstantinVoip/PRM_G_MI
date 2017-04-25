@@ -37,6 +37,8 @@
  extern "C" {
 #endif 
 
+#include "stdint.h"	 
+	 
 /** @addtogroup STM32F4xx_System_Includes
   * @{
   */

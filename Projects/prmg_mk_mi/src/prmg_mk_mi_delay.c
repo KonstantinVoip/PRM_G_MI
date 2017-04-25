@@ -281,6 +281,8 @@ static  void SysTick_CounterCmd(unsigned int SysTick_Counter)
 * Output         : None
 * Return         : None
 *******************************************************************************/
+
+/*
 static  void SysTick_ITConfig(FunctionalState NewState)
 {
   // Check the parameters
@@ -295,7 +297,7 @@ static  void SysTick_ITConfig(FunctionalState NewState)
     SysTick->CTRL &= CTRL_TICKINT_Reset;
   }
 }
-
+*/
 
 
 /*******************************************************************************
@@ -311,7 +313,8 @@ static  void SysTick_ITConfig(FunctionalState NewState)
 *******************************************************************************/
 static  FlagStatus SysTick_GetFlagStatus(unsigned char SysTick_FLAG)
 {
-  unsigned int statusreg = 0, tmp = 0 ;
+  unsigned int statusreg = 0;
+	
   FlagStatus bitstatus = RESET;
 
   // Check the parameters 
